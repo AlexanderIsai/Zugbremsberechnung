@@ -14,7 +14,7 @@ function evaluateConditions() {
         if (trainWeight > 800 && trainWeight < 1201) {
             result = 'Triebfahrzeug muss im G-Stellung sein<br>';
             flag = true;
-        } else if (trainWeight > 1201) {
+        } else if (trainWeight > 1200) {
             result = 'Triebfahrzeug und erste 5 Fahrzeuge müssen im G-Stellung sein<br>';
             flag = true;
         }
