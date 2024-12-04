@@ -20,22 +20,27 @@ function evaluateConditions() {
         }
 
         if (trainLength >= 501 && trainLength < 601) {
-            result += 'Fahrzeuge im P-Stellung -5%<br>';
+            result += 'Bremsgewicht für Fahrzeuge im P-Stellung -5%<br>';
             if (flag){
-                result += 'Fahrzeuge im G-Stellung -25%<br>';
+                result += 'Bremsgewicht für Fahrzeuge im G-Stellung -25%<br>';
             }
         } else if (trainLength >= 601 && trainLength < 701) {
-            result += 'Fahrzeuge im P-Stellung -10%<br>';
+            result += 'Bremsgewicht für Fahrzeuge im P-Stellung -10%<br>';
             if (flag){
-                result += 'Fahrzeuge im G-Stellung -25%<br>';
+                result += 'Bremsgewicht für Fahrzeuge im G-Stellung -25%<br>';
             }
         } else if (trainLength >= 701) {
-            result += 'Fahrzeuge im P-Stellung -19%<br>';
+            result += 'Bremsgewicht für Fahrzeuge im P-Stellung -19%<br>';
             if (flag){
-                result += 'Fahrzeuge im G-Stellung -25% und zusätzlich -5%<br>';
+                result += 'Bremsgewicht für Fahrzeuge im G-Stellung -25% und zusätzlich -5%<br>';
+            }
+        }
+        else {
+            if (flag){
+                result += 'Bremsgewicht für Fahrzeuge im G-Stellung -25%<br>';
             }
         }
     }
 
-    document.getElementById('result').innerHTML = result; // Используем innerHTML для правильного отображения <br>
+    document.getElementById('result').innerHTML = result;
 }
